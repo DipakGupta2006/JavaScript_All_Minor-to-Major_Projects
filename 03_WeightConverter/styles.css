@@ -1,0 +1,114 @@
+/* Page background */
+body {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Box container */
+.box {
+    border: none;
+    border-radius: 20px;
+    width: 400px;
+    min-height: 420px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffffcc;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 28px;
+    color: #0077b6;
+}
+
+/* Inputs container */
+.inputs {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    gap: 15px;
+    font-size: 18px;
+    /* font-weight: 20; */
+    color: #444;
+}
+
+/* Input fields */
+.inputs input {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #90e0ef;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    background: #f1faff;
+}
+
+.inputs input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 8px rgba(0, 119, 182, 0.3);
+}
+
+/* Innerbox */
+.innerbox {
+    width: 250px;
+    margin: 40px auto;
+    background: #e6f7ff;
+    border: 2px solid #48cae4;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: #03045e;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.innerbox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 119, 182, 0.2);
+}
+
+/* Answer text */
+.ans {
+    text-align: center;
+    font-size: 18px;
+    color: #023e8a;
+}
+
+/* Button */
+button.btn {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: 180px;
+    margin: 25px auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 119, 182, 0.3);
+}
+
+button.btn:hover {
+    background: linear-gradient(135deg, #0096c7, #48cae4);
+    box-shadow: 0 6px 15px rgba(0, 119, 182, 0.4);
+}
+
+button.btn:active {
+    transform: scale(0.97);
+}
