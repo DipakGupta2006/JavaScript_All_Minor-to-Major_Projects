@@ -1,0 +1,125 @@
+/* Page background */
+body {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f); /* warm peach gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-bottom: 70px; /* space for footer */
+}
+
+/* Box container */
+.box {
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    min-height: 450px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffffdd; /* semi-transparent white */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title h1 {
+    font-size: 30px;
+    color: #d95d39; /* warm reddish tone */
+    letter-spacing: 1px;
+}
+
+/* Inputs container */
+.inputs {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input fields */
+.inputs input {
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid #f6b26b; /* soft orange border */
+    border-radius: 12px;
+    outline: none;
+    background: #fff3e6;
+    transition: all 0.3s ease;
+}
+
+.inputs input:focus {
+    border-color: #f77f00; /* darker accent on focus */
+    box-shadow: 0 0 10px rgba(247, 127, 0, 0.3);
+}
+
+/* Innerbox */
+.innerbox {
+    width: 260px;
+    margin: 45px auto;
+    background: #fff4e6; /* light warm tone */
+    border: 2px solid #f77f00;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    color: #9b2226; /* deep red for text */
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.innerbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Buttons */
+button.btn, button.copybtn {
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f77f00, #ffb347); /* orange-yellow gradient */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(247, 127, 0, 0.25);
+}
+
+button.btn:hover, button.copybtn:hover {
+    background: linear-gradient(135deg, #f75c03, #ff9a56); /* darker gradient on hover */
+    box-shadow: 0 8px 20px rgba(247, 92, 3, 0.35);
+    transform: translateY(-2px);
+}
+
+button.btn:active, button.copybtn:active {
+    transform: scale(0.96);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 12px 0;
+    background-color: #d95d39; /* deep warm color */
+    color: #fff;
+    font-size: 13px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
