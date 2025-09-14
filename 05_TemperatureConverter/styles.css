@@ -1,0 +1,125 @@
+/* Page background */
+body {
+    background: linear-gradient(135deg, #fef9d7, #f6d365); /* soft yellow-orange gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-bottom: 70px; /* space for footer */
+}
+
+/* Box container */
+.box {
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    min-height: 450px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffffcc; /* semi-transparent white */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title h1 {
+    font-size: 30px;
+    color: #ff6b6b; /* bright coral red */
+    letter-spacing: 1px;
+}
+
+/* Inputs container */
+.inputs {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input fields */
+.inputs input {
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid #fcbf49; /* soft orange border */
+    border-radius: 12px;
+    outline: none;
+    background: #fff8f0;
+    transition: all 0.3s ease;
+}
+
+.inputs input:focus {
+    border-color: #f77f00; /* darker orange on focus */
+    box-shadow: 0 0 10px rgba(247, 127, 0, 0.3);
+}
+
+/* Innerbox for results */
+.innerbox {
+    width: 280px;
+    margin: 45px auto;
+    background: #fff1f0; /* light pink */
+    border: 2px solid #ff6b6b;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    color: #d00000; /* deep red text */
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.innerbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Buttons */
+button.btn, button.copybtn {
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff6b6b, #ffb347); /* red-orange gradient */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.25);
+}
+
+button.btn:hover, button.copybtn:hover {
+    background: linear-gradient(135deg, #ff4d4d, #ffa500); /* brighter hover effect */
+    box-shadow: 0 8px 20px rgba(255, 77, 77, 0.35);
+    transform: translateY(-2px);
+}
+
+button.btn:active, button.copybtn:active {
+    transform: scale(0.96);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 12px 0;
+    background-color: #ff6b6b; /* deep coral */
+    color: #fff;
+    font-size: 13px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
