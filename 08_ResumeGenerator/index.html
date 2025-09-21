@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <h1 class="title">Resume Generator</h1>
+
+  <div class="box">
+    <div class="topBox">
+      <div class="title1">Fill Details</div>
+
+      <div class="innerTopBox">
+        <form>
+          <div class="personalDetails">
+            <fieldset>
+              <legend>Personal Details</legend>
+              Enter Name
+              <input
+                type="text"
+                required
+                class="name inputs"
+                placeholder="Full Name"
+              /><br />
+
+              Enter Email ID
+              <input
+                type="email"
+                required
+                class="email inputs"
+                placeholder="Email ID"
+              /><br />
+
+              Enter Mobile Number
+              <input
+                type="tel"
+                required
+                class="mobile inputs"
+                placeholder="Mobile number"
+              /><br />
+
+              Enter Location
+              <input
+                type="text"
+                required
+                class="location inputs"
+                placeholder="Location"
+              /><br />
+
+              Enter LinkedIn Profile URL (optional)
+              <input
+                type="url"
+                class="linkedin inputs"
+                placeholder="Location"
+              /><br />
+
+              Enter GitHub Profile URL (optional)
+              <input
+                type="url"
+                class="github inputs"
+                placeholder="Location"
+              /><br />
+
+              Enter LeetCode Profile URL (optional)
+              <input
+                type="url"
+                class="leetcode inputs"
+                placeholder="Location"
+              /><br />
+
+              Enter HackerRank Profile URL (optional)
+              <input
+                type="url"
+                class="hackerrank inputs"
+                placeholder="Location"
+              /><br />
+            </fieldset>
+          </div>
+
+          <div class="aboutMe">
+            <fieldset>
+              <legend>About Me</legend>
+              Write About Yourself<br />
+              <textarea
+                class="about inputs"
+                rows="5"
+                cols="75"
+                placeholder="Write about yourself here..."
+              ></textarea
+              ><br />
+            </fieldset>
+          </div>
+
+          <div class="educationDetails">
+            <fieldset>
+              <legend>Education Details</legend>
+
+              Enter College Name (10th)
+              <input
+                type="text"
+                required
+                class="college10Name inputs"
+                placeholder="College Name"
+              /><br />
+
+              Percentage/CGPA (10th)
+              <input
+                type="text"
+                required
+                class="college10Percent inputs"
+                placeholder="Percentage/CGPA"
+              /><br />
+
+              Enter College Name (12th)
+              <input
+                type="text"
+                required
+                class="college12Name inputs"
+                placeholder="College Name"
+              /><br />
+
+              Percentage/CGPA (12th)
+              <input
+                type="text"
+                required
+                class="college12Percent inputs"
+                placeholder="Percentage/CGPA"
+              /><br />
+
+              Enter College Name (Graduation)
+              <input
+                type="text"
+                required
+                class="degree inputs"
+                placeholder="Degree"
+              /><br />
+
+              Percentage/CGPA (Graduation)
+              <input
+                type="text"
+                required
+                class="degreePercent inputs"
+                placeholder="Percentage/CGPA"
+              /><br />
+
+              Enter Branch (Graduation)
+              <input
+                type="text"
+                required
+                class="branch inputs"
+                placeholder="Branch"
+              /><br />
+            </fieldset>
+          </div>
+
+          <div class="skills">
+            <fieldset>
+              <legend>Skills</legend>
+              Enter Your Programming Languages Skills (comma separated)<br />
+              <input
+                type="text"
+                required
+                class="prolangSkills inputs"
+                placeholder="e.g. C, C++, Python, Java"
+              /><br />
+
+              Enter Your Web Development Skills (comma separated)<br />
+              <input
+                type="text"
+                required
+                class="webSkills inputs"
+                placeholder="e.g. HTML, CSS, JavaScript"
+              /><br />
+
+              Enter Your Library/Framework Skills (comma separated)<br />
+              <input
+                type="text"
+                required
+                class="libSkills inputs"
+                placeholder="e.g. React, Node.js, Django"
+              /><br />
+
+              Enter Your Computer Fundamentals Skills (comma separated)<br />
+              <input
+                type="text"
+                required
+                class="compSkills inputs"
+                placeholder="e.g. Comupter Networks, DBMS"
+              /><br />
+
+              Enter Your Platform Skills (comma separated)<br />
+              <input
+                type="text"
+                required
+                class="platformSkills inputs"
+                placeholder="e.g. VS Code, GitHub, Google Colab"
+              /><br />
+            </fieldset>
+          </div>
+
+          <div class="projects">
+            <fieldset>
+              <legend>Projects</legend>
+
+              Enter Project Title
+              <input
+                type="text"
+                required
+                class="projectTitle inputs"
+                placeholder="Project Title"
+              /><br />
+              Enter Project Description<br />
+
+              <textarea
+                class="projectDesc inputs"
+                rows="4"
+                cols="75"
+                placeholder="Project Description"
+              ></textarea
+              ><br />
+
+              Enter Projects Features <br />
+
+              <textarea
+                class="projectFeatures inputs"
+                rows="4"
+                cols="75"
+                placeholder="Project Features (comma separated)"
+              ></textarea
+              ><br />
+
+              Enter Project Link (optional)
+              <input
+                type="url"
+                class="projectLink inputs"
+                placeholder="Project Link"
+              /><br />
+            </fieldset>
+          </div>
+
+          <div class="certificates">
+            <fieldset>
+              <legend>Certificates</legend>
+
+              Enter Certificate Title
+              <input
+                type="text"
+                required
+                class="certTitle inputs"
+                placeholder="Certificate Title"
+              /><br />
+              Enter Certificate Description<br />
+              <textarea
+                class="certDesc inputs"
+                rows="4"
+                cols="75"
+                placeholder="Certificate Description"
+              ></textarea
+              ><br />
+              Enter Certificate Link (optional)
+              <input
+                type="url"
+                class="certLink inputs"
+                placeholder="Certificate Link"
+              /><br />
+            </fieldset>
+          </div>
+
+          <div class="restart">
+            <button class="add btn" type="button">Add</button>
+            <button class="reset btn" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- right hand side box -->
+    <div class="bottomBox">
+      <h1 class="title1">Resume</h1>
+      <p class="title1">This should appear in PDF.</p>
+      <div id="resumePreview" class="output"></div>
+
+      <div class="btnGroup">
+        <button onclick="downloadPDF()" class="btn">Download PDF</button>
+        <button class="resetall btn">Reset All</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

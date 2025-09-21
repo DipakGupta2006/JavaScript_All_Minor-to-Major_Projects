@@ -1,0 +1,201 @@
+/* ---------- General Styles ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #141e30, #243b55); /* Dark glossy gradient */
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Title ---------- */
+.title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+/* ---------- Main Container ---------- */
+.box {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* ---------- Top Section (Form Area) ---------- */
+.topBox {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+.title1 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #00f7ff;
+  text-shadow: 0 0 12px #00f7ff;
+}
+
+.innerTopBox {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ---------- Fieldset ---------- */
+fieldset {
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px;
+  margin: 0;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.15);
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00f7ff;
+  padding: 0 8px;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+/* ---------- Inputs & Textareas ---------- */
+.inputs {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0 18px 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f0f0f0;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.inputs::placeholder {
+  color: rgba(200, 200, 200, 0.7);
+}
+
+.inputs:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 12px #00f7ff;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 10px 0 0;
+  color: #fff;
+  background: linear-gradient(135deg, #00f7ff, #0072ff);
+  box-shadow: 0 0 15px #00f7ff;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 25px #00f7ff, 0 0 40px #0072ff;
+}
+
+/* ---------- Bottom Section (Preview) ---------- */
+.bottomBox {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.25);
+}
+
+.title2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffea00;
+  text-shadow: 0 0 12px #ffea00;
+}
+
+.restart {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* ---------- Custom Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00f7ff, #0072ff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: flex-start; /* left align */
+  gap: 15px; /* space between buttons */
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: linear-gradient(135deg, #00f7ff, #0072ff);
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f7ff, 0 0 40px #0072ff;
+}
+
+/* Extra style for PDF button */
+.pdf {
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  box-shadow: 0 0 10px #ff00cc;
+}
+.pdf:hover {
+  box-shadow: 0 0 20px #ff00cc, 0 0 40px #3333ff;
+}
+
+#resumePreview {
+  background: #141e30 !important; /* solid bg */
+  color: #ffffff !important; /* force white text */
+  padding: 20px;
+}
+
+#resumePreview * {
+  color: #ffffff !important; /* सब text white */
+}
